@@ -1,1 +1,93 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game pedra, papel e tesolra</title>
+</head>
+<body>
+    <main class="corp">
+        <section onclick="activeRules()" class="section-rules">
+            <div class="conteiner-rules">
+                <h2 class="title-conteiner-rules">
+                    RULES
+                </h2>
+                <img src="images/image-rules.svg" alt="img-rules" class="img-rules">
+            </div>
+        </section>
+        <header class="header">
+            <div class="conteiner-header-infor">
+                <div class="conteiner-01-header-infor">
+                    <img src="images/logo.svg" alt="logo" class="logo">
+                </div>
+                <div class="conteiner-02-header-infor">
+                    <h2 class="titleScore">Score</h2>
+                    <sapn id="score" class="score">0</sapn>
+                </div>
+            </div>
+        </header>
+        <section class="conteudo">
+            <div class="conteiner-conteudo">
+                <div class="conteiner-button-50 c-b502">
+                    <button onclick="clickSelectOpcao('paper')" class="button-game-opcoes b-01 b-50">
+                        <div class="conteiner-circle-button">
+                            <img src="images/icon-paper.svg" alt="img-button-conteudo-game" class="img-button-conteudo-game">
+                        </div>
+                    </button>
+                </div>
+                <div class="conteiner-button-50">
+                    <button onclick="clickSelectOpcao('scissors')" class="button-game-opcoes b-02">
+                        <div class="conteiner-circle-button">
+                            <img src="images/icon-scissors.svg" alt="img-button-conteudo-game" class="img-button-conteudo-game">
+                        </div>
+                    </button>
+                </div>
+                <div class="conteiner-button-100">
+                    <button onclick="clickSelectOpcao('rock')" class="button-game-opcoes b-03">
+                        <div class="conteiner-circle-button">
+                            <img src="images/icon-rock.svg" alt="img-button-conteudo-game" class="img-button-conteudo-game">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="conteiner-conteudo-select">
+                <div class="conteiner-conteiner-conteudo-select">
+                    <h2 class="title-conteiner-conteiner-conteudo-select">
+                        YOUR PICKED
+                    </h2>
+                    <button class="button-game-opcoes b-01 b-slect b-slect-you b-s">
+                        <div class="conteiner-circle-button">
+                            <img src="images/icon-paper.svg" id="img-button-conteudo-game" alt="img-button-conteudo-game" class="img-button-conteudo-game">
+                        </div>
+                    </button>
+                </div>
+                <div class="conteiner-resultado">
+                    <h2 id="title-resul" class="title-conteiner-resultado">
+                        YOU LOSE
+                    </h2>
+                    <button onclick="playAgain()" class="button-conteiner-resultado">
+                        PLAY AGAIN
+                    </button>
+                </div>
+                <div class="conteiner-conteiner-conteudo-select">
+                    <h2 class="title-conteiner-conteiner-conteudo-select">
+                        THE HOUSE PICKED
+                    </h2>
+                    <button id="" class="button-game-opcoes b-01 b-slect b-boo b-slect-boot b-s">
+                        <div class="conteiner-circle-button">
+                            <img src="images/icon-paper.svg" id="img-button-conteudo-game-bott" alt="img-button-conteudo-game" class="img-button-conteudo-game">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <button onclick="activeRules()" class="button-rules-footer">
+                RULES
+            </button>
+        </footer>
+    </main>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
